@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   Clang-Format-File:
-  run-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - name: Cat File Test Before Clang Format
       run: cat $HOME/testClangFormat.c
