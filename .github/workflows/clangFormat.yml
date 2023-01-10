@@ -2,6 +2,10 @@ name: GitHub Clang Format
 run-name: ${{ github.actor }} is testing out GitHub Actions
 on: [push]
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   Clang-Format-File:
     runs-on: ubuntu-latest
