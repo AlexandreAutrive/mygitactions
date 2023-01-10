@@ -2,9 +2,9 @@ name: GitHub Clang Format
 run-name: ${{ github.actor }} is testing out GitHub Actions
 on: [push]
 
-defaults:
-  run:
-    shell: bash
+#defaults:
+ # run:
+  #  shell: bash
 
 jobs:
   Clang-Format-File:
@@ -33,5 +33,6 @@ jobs:
         run: clang-format -i $FILE
         env: 
           FILE: ${{ steps.testClangFormat.c }}
+        shell: bash
       #- name: Cat File Test After Clang Format
        # run: cat ./testClangFormat.c
