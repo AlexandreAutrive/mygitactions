@@ -18,6 +18,9 @@ jobs:
       - name: tree
         run: |
           tree ../
+      - uses: pCYSl5EDgo/cat@master
+        with:
+          path: testClangFormat.c
       - name: Cat File Test Before Clang Format
         run: cat $TEXT
         env:
