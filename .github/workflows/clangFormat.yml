@@ -12,6 +12,9 @@ jobs:
       - name: path
         run: |
           pwd
+      - name: LS
+        run: |
+          ls ../
       - name: Cat File Test Before Clang Format
         run: cat /home/runner/testClangFormat.c
       # - name: Run Clang Format
