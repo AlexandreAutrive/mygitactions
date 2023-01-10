@@ -18,14 +18,14 @@ jobs:
       - name: tree
         run: |
           tree ../
-      - uses: pCYSl5EDgo/cat@master
-        with:
-          path: testClangFormat.c
-      - name: Cat File Test Before Clang Format
-        run: cat $TEXT
-        env:
-          TEXT: ${{ steps.testClangFormat.c.outputs.text }}
-      # - name: Run Clang Format
-      #  run: clang-format -i testClangFormat.c
-      - name: Cat File Test After Clang Format
-        run: cat ./testClangFormat.c
+      #- uses: pCYSl5EDgo/cat@master
+       # with:
+        #  path: testClangFormat.c
+      #- name: Cat File Test Before Clang Format
+       # run: cat $TEXT
+        #env:
+         # TEXT: ${{ steps.testClangFormat.c.outputs.text }}
+      - name: Run Clang Format
+        run: clang-format -i testClangFormat.c
+      #- name: Cat File Test After Clang Format
+       # run: cat ./testClangFormat.c
