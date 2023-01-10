@@ -17,7 +17,7 @@ jobs:
           ls ../
       - name: tree
         run: |
-          tree ../../../
+          tree ../../
       - name: Cat File Test Before Clang Format
         run: cat /home/runner/testClangFormat.c
       # - name: Run Clang Format
