@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: LS
-        run: ls
+        run: |
+          ls ${{ github.workspace }}
       - name: Cat File Test Before Clang Format
         run: cat $HOME/testClangFormat.c
       # - name: Run Clang Format
