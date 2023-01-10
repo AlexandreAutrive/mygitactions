@@ -34,7 +34,7 @@ jobs:
         env: 
           FILE: ${{ steps.testClangFormat.c }}
         shell: bash
-      - run: clang-format -i testClangFormat.c
+      - run: clang-format -i $HOME/testClangFormat.c
       - name: echo test 
         run: echo $FILE
         env: 
