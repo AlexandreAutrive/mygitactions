@@ -2,18 +2,20 @@
 
 int main(void)
 {
-	int test = 1;
+    int test = 1;
 
-	if(test == 1)
-		printf("True\n");
+    if (test == 1)
+        printf("True\n");
 
-	else if (test != 0)
-	{
-		return 0;
-	}
+    else if (test != 0)
+    {
+        return 0;
+    }
 
-	else
-	{return 1;}
+    else
+    {
+        return 1;
+    }
 
-	return 1;
+    return 1;
 }
