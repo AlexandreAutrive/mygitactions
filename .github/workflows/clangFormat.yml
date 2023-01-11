@@ -30,11 +30,11 @@ jobs:
         #env:
          # TEXT: ${{ steps.testClangFormat.c.outputs.text }}
       - name: Run Clang Format
-        run: clang-format -i $FILE
+        run: clang-format-epita # -i $FILE
         env: 
           FILE: ${{ steps.testClangFormat.c }}
         shell: bash
-      - run: clang-format -i testClangFormat.c #$HOME
+      - run: clang-format-epita #-i $HOME/testClangFormat.c
       - name: echo test 
         run: echo $FILE
         env: 
