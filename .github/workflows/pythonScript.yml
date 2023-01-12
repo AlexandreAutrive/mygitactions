@@ -1,8 +1,8 @@
 name: py
 
-on:
-  schedule:
-    - cron: "30 11 * * *"    #runs at 11:30 UTC everyday
+on: [push]
+  #schedule:
+  #  - cron: "30 11 * * *"    #runs at 11:30 UTC everyday
 
 jobs:
   build:
