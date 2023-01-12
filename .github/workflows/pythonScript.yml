@@ -38,4 +38,4 @@ jobs:
           python script/python/joiningTwoStrings.py
       - name: Run test1.py
         run: |
-          flake8 script/python/test1.py
+          python script/python/test1.py
