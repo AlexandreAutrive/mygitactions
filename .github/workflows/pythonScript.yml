@@ -36,9 +36,8 @@ jobs:
       - name: Run joiningTwoStrings.py
         run: |
           python script/python/joiningTwoStrings.py
-      - name: Test with pytest
-        run: |
-          pytest pythonTest/test1.py
       - name: Run test1.py
         run: |
-          python pythonTest/test1.py
+          pip install pytest
+          pip install pytest-cov
+          pytest pythonTest/test1.py
